@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 45%;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#prevBtn:hover {
+  font-size: 40px;
+  left: 4%;
+  top: 49%;
+}
+
+#nextBtn:hover {
+  font-size: 40px;
+  right: 4%;
+  top: 49%;
+  transform: translate(-2%, -2%);
+}
